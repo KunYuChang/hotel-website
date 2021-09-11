@@ -62,8 +62,12 @@ p {
 }
 
 .bg-primary {
-  background-color: #252a34;
-  color: #ff2e63;
+  background-color: #ff2e63;
+  color: #252a34;
+}
+
+.clr {
+  clear: both;
 }
 
 /* Header */
@@ -154,4 +158,23 @@ header nav ul li .current {
 
 .home-info .info-content p{
   padding: 2rem;
+}
+
+.features .box {
+  float: left;
+  width: 33.3%;
+  padding: 3rem;
+  text-align: center;
+}
+
+.features .box i{
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #252a34;
+  color: #eaeaea;
+  padding: 1.25em;
+  text-align: center;
 }
