@@ -6,64 +6,152 @@
 }
 
 /* Main Styling */
-html,body{
+html,
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7rem;
- }
+}
 
 a {
-  color: #252A34;
+  color: #252a34;
   text-decoration: none;
 }
 
-h1, h2, h3 {
-  padding-bottom: 20px;
+h1,
+h2,
+h3 {
+  padding-bottom: 1.25rem;
 }
 
 p {
-  margin: 10px;
+  margin: 0.5rem;
+}
+
+.text-primary {
+  color: #ff2e63;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #eaeaea;
+  background-color: #252a34;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #ff2e63;
+  background-color: #0e1727;
+}
+
+.btn-light {
+  color: #252a34;
+  background-color: #eaeaea;
+}
+
+.bg-dark {
+  background-color: #252a34;
+  color: #eaeaea;
+}
+
+.bg-light {
+  background-color: #eaeaea;
+  color: #252a34;
+}
+
+.bg-primary {
+  background-color: #252a34;
+  color: #ff2e63;
 }
 
 /* Header */
 header * {
-  color: #EAEAEA;
+  color: #eaeaea;
 }
 
 header {
-  background-color: #252A34;
-  overflow: auto;  
+  background-color: #252a34;
+  overflow: auto;
 }
 
 header .container {
   max-width: 1100px;
   overflow: auto;
   margin: auto;
-  padding: 0 20px; 
+  padding: 0 1.25rem;
 }
 
 header h1 {
   float: left;
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 
-header nav ul{
+header nav ul {
   list-style: none;
   float: right;
 }
 
-header nav ul li{
+header nav ul li {
   float: left;
 }
 
-header nav ul li a{
+header nav ul li a {
   display: block;
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
 }
 
 header nav ul li a:hover,
-header nav ul li .current{
+header nav ul li .current {
   color: #ff2e63;
-  background-color: #0E1727;
+  background-color: #0e1727;
 }
 
+/* Main */
+.showcase {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../images/showcase.jpg') no-repeat center center/cover;
+}
+
+.showcase-content {
+  color: #eaeaea;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+.showcase-content h1 {
+  font-size: 3.75rem;
+}
+
+.showcase-content p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding-bottom: 1.25rem;
+}
+
+.home-info {
+  height: 50vh;
+}
+
+.home-info .info-img {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background: url('../images/photo-1.jpg') no-repeat center center/cover;
+}
+
+.home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 3rem 2rem;
+  overflow: auto;
+}
+
+.home-info .info-content p{
+  padding: 2rem;
+}
