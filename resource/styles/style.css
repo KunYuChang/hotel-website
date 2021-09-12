@@ -225,6 +225,35 @@ header nav ul li .current {
   margin-right: 1.25rem;
 }
 
+.contact-form {
+  padding: 2rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px #ccc solid;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.contact-form textarea {
+  height: 20vh;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff2e63;
+}
 
 /* Footer */
 footer {
