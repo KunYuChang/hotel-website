@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 /* Reset */
 * {
   margin: 0;
@@ -87,9 +89,11 @@ header .container {
   padding: 0 1.25rem;
 }
 
-header h1 {
+header .logo {
   float: left;
   padding-top: 1.25rem;
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
 }
 
 header nav ul {
@@ -261,4 +265,70 @@ footer {
   color: #eaeaea;
   padding: 1.25em;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  header .logo {
+    float: none;
+    text-align: center;
+    padding-bottom: 0.5rem;  
+  }
+
+  header nav ul {
+    float: none;
+  }
+  
+  header nav ul li {
+    float: none;
+  }
+
+  header nav ul li a {
+    padding: 0.5rem;
+  }
+
+  .showcase {
+    height: 40vh;
+  }
+  .showcase-content h1 {
+    
+    font-size: 2rem;
+  }
+
+  .showcase-content {
+    padding-top: 10vh;
+  }
+  
+  /* Home Info */
+  .home-info .info-img {
+    display: none;
+  }
+
+  .home-info .info-content {
+    float: none;
+    width: 100%;
+  }
+
+  .features .box {
+    float: none;
+    width: 100%;
+  }
+
+  /* about page */
+  .info-left,
+  .info-right {
+    float: none;
+    width: 100%;
+  }
+
+  .info-right {
+    display: none;
+  }
+
+  .testimonials {
+    height: 100%;
+  }
+
+  .contact-form h1 {
+    text-align: center;
+  }
 }
